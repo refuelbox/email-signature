@@ -14,7 +14,7 @@ const info = {
     logoLink: 'http://www.refuelbox.com'
 };
 
-const Table = ({ firstName, lastName, position, email, skype, phone }) => (
+const Table = ({ firstName, lastName, position, email, skype, phone, bannerUrl }) => (
         <table>
             <tbody>
                 <tr>
@@ -23,13 +23,13 @@ const Table = ({ firstName, lastName, position, email, skype, phone }) => (
                             <img src={info.logo} alt="Logo" height="80" width="80" />
                         </a>
                         <div style={{ textAlign: 'center' }}>
-                            <a href={info.twitter} target="_blank">
+                            <a href={info.twitter} target="_blank" rel="noopener noreferrer">
                                 <img src={twitter} alt="" width="16px" height="16px" style={{ marginRight: '4px' }} />
                             </a>
-                            <a href={info.linkedin} target="_blank">
+                            <a href={info.linkedin} target="_blank" rel="noopener noreferrer">
                                 <img src={linkedin} alt="" width="16px" height="16px" style={{ marginRight: '4px' }} />
                             </a>
-                            <a href={info.facebook} target="_blank">
+                            <a href={info.facebook} target="_blank" rel="noopener noreferrer">
                                 <img src={facebook} alt="" width="16px" height="16px" />
                             </a>
                         </div>

@@ -3,7 +3,7 @@ import './App.css';
 import 'antd/dist/antd.css';
 import Table from './components/Table';
 
-import { Form, Col, Input, Button } from 'antd';
+import { Form, Input, Button } from 'antd';
 
 class App extends Component {
   constructor() {
@@ -15,7 +15,9 @@ class App extends Component {
       email: '',
       skype: '',
       skypeUrl: '',
-      phone: ''
+      phone: '',
+      bannerUrl: '',
+      bannerLink: ''
     };
   }
 
@@ -33,7 +35,9 @@ class App extends Component {
       email: '',
       skype: '',
       skypeUrl: '',
-      phone: ''
+      phone: '',
+      bannerUrl: '',
+      bannerLink: ''
     })
   }
 
@@ -64,6 +68,12 @@ class App extends Component {
           <Form.Item {...formItemLayout} label="Phone">
             <Input name="phone" onChange={this.handleChange} value={this.state.phone} />
           </Form.Item>
+          <Form.Item {...formItemLayout} label="Banner URL">
+            <Input name="bannerUrl" onChange={this.handleChange} value={this.state.bannerUrl} />
+          </Form.Item>
+          <Form.Item {...formItemLayout} label="Banner Link">
+            <Input name="bannerLink" onChange={this.handleChange} value={this.state.bannerLink} />
+          </Form.Item>
           <Form.Item {...formItemLayout} label="Skype">
             <Input name="skype" onChange={this.handleChange} value={this.state.skype} />
           </Form.Item>
@@ -78,6 +88,13 @@ class App extends Component {
             skypeUrl={this.state.skypeUrl}
             phone={this.state.phone}
           />
+          {
+            this.state.bannerUrl &&
+            <a href={this.state.bannerLink} target="_blank" rel="noopener noreferrer">
+              <img src={this.state.bannerUrl} alt="banner" width="500px" style={{marginTop: '10px' }} /> 
+            </a>
+          }
+          
       </div>
     );
   }
