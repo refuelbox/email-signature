@@ -1,4 +1,4 @@
-a, a:hover {
-    color: inherit;
+a, a:hover, a:visited, a:active {
+    color: black;
     text-decoration: none; /* no underline */
 }

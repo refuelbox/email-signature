@@ -1,12 +1,12 @@
 import React from 'react';
-import twitter from '../img/twitter.png';
-import instagram from '../img/instagram.png';
-import facebook from '../img/facebook.png';
 
 const info = {
     instagram: 'https://instagram.com/refuelbox',
     twitter: 'https://twitter.com/refuelbox',
     facebook: 'https://www.facebook.com/refuelbox',
+    instagramIcon: 'https://github.com/ykmsd/email-signature/blob/master/src/img/instagram.png?raw=true',
+    twitterIcon: 'https://github.com/ykmsd/email-signature/blob/master/src/img/twitter.png?raw=true',
+    facebookIcon: 'https://github.com/ykmsd/email-signature/blob/master/src/img/facebook.png?raw=true',
     color: 'black',
     companyName: 'ReFuel Box',
     companyWebsite: 'http://www.refuelbox.com',
@@ -24,13 +24,13 @@ const Table = ({ name, position, email, skype, phone, skypeUrl }) => (
                         </a>
                         <div style={{ textAlign: 'center' }}>
                             <a href={info.twitter} target="_blank" rel="noopener noreferrer">
-                                <img src={twitter} alt="" width="16px" height="16px" style={{ marginRight: '3px' }} />
+                                <img src={info.twitterIcon} alt="" width="16px" height="16px" style={{ marginRight: '3px' }} />
                             </a>
                             <a href={info.instagram} target="_blank" rel="noopener noreferrer">
-                                <img src={instagram} alt="" width="16px" height="16px" style={{ marginRight: '3px' }} />
+                                <img src={info.instagramIcon} alt="" width="16px" height="16px" style={{ marginRight: '3px' }} />
                             </a>
                             <a href={info.facebook} target="_blank" rel="noopener noreferrer">
-                                <img src={facebook} alt="" width="16px" height="16px" />
+                                <img src={info.facebookIcon} alt="" width="16px" height="16px" />
                             </a>
                         </div>
                     </td>
