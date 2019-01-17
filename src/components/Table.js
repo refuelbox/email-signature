@@ -9,7 +9,7 @@ const info = {
     facebookIcon: 'https://github.com/ykmsd/email-signature/blob/master/src/img/facebook.png?raw=true',
     color: 'black',
     companyName: 'ReFuel Box',
-    companyWebsite: 'http://www.refuelbox.com',
+    companyWebsite: 'www.refuelbox.com',
     logo: 'https://refuelbox.com/wp-content/uploads/2019/01/Email-signature-512x512_09.png',
     logoLink: 'http://www.refuelbox.com'
 };
@@ -45,7 +45,7 @@ const Table = ({ name, position, email, skype, phone, skypeUrl }) => (
                                 <span style={{ display: 'block'}}>Email: <a href={'mailto:' + email} style={{ color: info.color}}>{ email }</a></span>
                                 <span style={{ display: 'block'}}>Skype: <a href={skypeUrl} target="_blank" rel="noopener noreferrer"><span style={{ color: info.color }}>{ skype }</span></a></span>
                                 <span style={{ display: 'block'}}>Phone: <span style={{ color: info.color }}>{ phone }</span></span>
-                                <a href={info.companyWebsite} target="_blank" rel="noopener noreferrer">
+                                <a href={'https://' + info.companyWebsite} target="_blank" rel="noopener noreferrer">
                                     <span style={{ display: 'block'}}><span style={{ color: info.color }}>{ info.companyWebsite }</span></span>
                                 </a>
 
